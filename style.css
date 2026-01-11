@@ -1,0 +1,78 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a2e; /* Um fundo azul escuro */
+    color: #ffffff;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border: 2px solid #e94560;
+}
+
+h1 {
+    color: #fca311; /* Cor laranja/dourada para o título */
+    text-transform: uppercase;
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.reel {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fca311;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; /* Tamanho grande para os símbolos */
+    background-color: #0f3460;
+    border-radius: 10px;
+    overflow: hidden; /* Esconde qualquer conteúdo que saia da caixa */
+}
+
+#spin-button {
+    background-color: #e94560; /* Cor de destaque para o botão */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#spin-button:hover {
+    background-color: #fca311;
+}
+
+#spin-button:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+p {
+    font-size: 18px;
+}
+
+#message {
+    margin-top: 15px;
+    height: 25px; /* Altura fixa para não "pular" a tela quando o texto muda */
+    font-style: italic;
+    color: #fca311;
+}
